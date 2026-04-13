@@ -1,0 +1,11 @@
+services:
+  floci:
+    image: hectorvent/floci:latest
+    ports:
+      - "4566:4566"
+    environment:
+      - FLOCI_HOSTNAME=floci
+      - QUARKUS_HTTP_PORT=4566
+      - FLOCI_DEFAULT_REGION=us-east-1
+      - FLOCI_DEFAULT_ACCOUNT_ID=000000000000
+      - FLOCI_BASE_URL=http://localhost:4566
