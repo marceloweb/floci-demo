@@ -5,6 +5,7 @@ services:
       - "4566:4566"
     environment:
       - FLOCI_HOSTNAME=floci
+      - QUARKUS_LOG_LEVEL=DEBUG
       - QUARKUS_HTTP_PORT=4566
       - FLOCI_DEFAULT_REGION=us-east-1
       - FLOCI_DEFAULT_ACCOUNT_ID=000000000000
